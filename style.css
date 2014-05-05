@@ -1,0 +1,697 @@
+/*CSS STYLE FILE*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*body {
+	background: #CCBBAA
+	}*/
+
+	.wrapper {
+		max-width: 1200px;
+		margin:0 auto;
+		background: rgba(221,221,238,0.5);
+		font-family: 'Open Sans' sans-serif;
+	}
+
+	.content {
+		padding:20px 50px 20px 50px;
+	}
+
+	/*HEADER*/
+
+	.header {
+		background: #CCBBAA;
+		padding:20px;
+		border-bottom:4px solid #000038;
+	}
+
+	.logoImg {
+		float:left;
+		margin-left: 50px;
+		position: relative;
+	}
+
+	img.logo2 {
+		display: none;
+	}
+
+	img.logo3 {
+		display: none;
+	}
+
+
+	ul.nav {
+		margin:0;
+		margin-right: 20px;
+		padding:0;
+		float:right;
+		position: relative;
+		top:7px;
+	}
+
+	ul.nav li {
+		display:inline;
+		list-style-type: none;
+	}
+
+	ul.nav li a {
+		text-decoration: none;
+		text-transform: uppercase;
+		padding:10px;
+		margin:5px;
+		color:black;
+		font-size: 18px;
+	}
+
+	ul.nav li a:hover {
+		color:#2A2A3F;
+		border-top: 2px solid #2A2A3F;
+	}
+
+	/*CONTENT HOME*/
+
+	h1 {
+		text-align: center;
+		margin-bottom: 50px;
+		font-family: 'Oswald', sans-serif;
+		color:#040425;
+		letter-spacing: 2px;
+		text-shadow:1px 1px 1px #2A2A3F;
+	}
+
+	.home .content p {
+		width: 60%;
+		text-align: center;
+		margin:0 auto;
+		margin-bottom: 50px;
+	}
+
+	.flexslider {
+		width:75%;
+		height: 50%;
+	}
+
+	ul.slides li {
+		position: relative;
+	}
+
+	.home ul.slides p {
+		background:rgba(0,0,0,0.6);
+		z-index: 999;
+		position: absolute;
+		bottom:0;
+		width: 100%;
+		margin:0;
+		padding:30px;
+		text-align: center;
+		color:white;
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing: -1px;
+
+	}
+
+	/*FOOTER*/
+
+	.footer {
+		background:#CCBBAA; 
+		padding:10px;
+		margin-top: 50px;
+		clear:both;
+	}
+
+	.footer p:first-child {
+		float:left;
+		margin-left: 30px
+	}
+
+	.footer p:last-child {
+		float:right;
+		margin-right:40px;
+	}
+
+	.footer p img {
+		margin-right: 10px;
+		position: relative;
+		top:6px;
+	}
+
+	/*ABOUT*/
+
+	h2 {
+		color:#040425;
+		letter-spacing: -2px;
+		text-shadow:1px 1px 1px #2A2A3F;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		color:#012930;
+	}
+
+	.about .content {
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+	.about .left {
+		float:left;
+		width: 50%;
+		padding:10px;
+		margin-right: 10%;
+	}
+
+	h2.phil {
+		margin-top: 50px;
+
+	}
+
+	.about .left p:nth-last-child(-n+2) {
+		font-style: italic;
+
+	}
+
+	.about .left h2:last-child {
+		text-align: center;
+	}
+
+	.about .right {
+		float:left;
+		width: 40%;
+		padding:10px;
+		
+	}
+
+	.about .right p:first-child {
+		font-style: italic;
+	}
+
+	iframe {
+		margin-top: 30px;
+		max-width: 100%;
+	}
+	
+	/*SERVICES*/
+
+	.serviceSection {
+	  display:none;
+	}
+
+	h2.sectionTitle:hover {
+		cursor: pointer;
+	}
+	
+	.serviceSection, .sectionTitle {
+		clear:both;
+		overflow: hidden;
+	}
+
+	.serviceSection .box {
+		padding:15px;
+		background: white;
+		box-shadow: 1px 1px 2px #CCCCCC;
+		border-radius: 3px;
+		text-align: center;
+		display: none;
+		width: 48%;
+		margin: 10px 50px;
+		float: left;
+	}
+	
+	ol li {
+		text-align: left;
+	}
+
+	ol li a {
+		text-decoration: none;
+		color:black;
+	}
+
+	ol li a:hover {
+		text-decoration: underline;
+	}
+
+	
+	ul.programs {
+		display: inline;
+		margin:0;
+		width: 30%;
+		float: left;
+
+	}
+
+	ul.programs li {
+		list-style-type: none;
+	}
+
+	.services ul.programs a {
+		text-decoration: none;
+		color:black;
+		line-height: 2.5;
+		border-bottom:1px solid #8899AA;
+		width: 210px;
+	}
+
+	.services ul.programs a:hover {
+		color:#2A2A3F;
+		font-weight: 600;
+	}
+
+	.serviceSection2 p {
+		width: 50%;
+		float: left;
+	}
+
+	.serviceSection2 img {
+		margin:10px 40px;
+		border:2px solid rgba(0,0,0,0.5);
+	}
+
+	.serviceSection5 p {
+		width: 50%;
+		float: left;
+	}
+
+	.serviceSection5 img {
+		margin:10px 40px;
+		border:2px solid rgba(0,0,0,0.5);
+
+	}
+
+	
+
+	/*Healthy Living*/
+
+
+	.healthyLiving .content p {
+		width: 30%;
+		line-height: 2;
+		float:left;
+		margin-right: 7%;
+		margin-left: 3%;
+	}
+
+	.noteLinks {
+		float:left;
+		margin: 0px 45px;
+	}
+
+	.healthyLiving .content a {
+		text-decoration: none;
+		color:black;
+		display: block;
+		line-height: 2.5;
+		border-bottom:1px solid #8899AA;
+		width: 210px;
+	}
+
+	.healthyLiving .content a:hover {
+		color:#2A2A3F;
+		font-weight: 600;
+	}
+
+	
+
+	/* CAREERS */
+
+	.careerSection {
+		display: none;
+	}
+
+	.careerSection.oppourtunities {
+		display: block;
+	}
+
+	.careers .training .boxes {
+		width: 45%;
+		float:left;
+	}
+
+	.careers .training .box2 {
+		float:right;
+	}
+
+	.careers .employees a {
+		text-decoration: none;
+		color:black;
+		display: block;
+		line-height: 2.5;
+		border-bottom:1px solid #8899AA;
+		width: 210px;
+	}
+
+	.careers .employees a:hover {
+		color:#2A2A3F;
+		font-weight: 600;
+	}
+
+	.careerLinks {
+		padding:20px;
+		margin-bottom: 50px;
+	}
+
+	ul.nav.careerNav{
+		margin-right: 0;
+		text-align: center;
+		float:none;
+	}
+
+	.careerHalf {
+		width: 45%;
+		float: left;
+		padding:15px;
+		margin-top:20px;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		background: white;
+		box-shadow: 1px 1px 2px #CCCCCC;
+		border-radius: 5px;
+	}
+
+	.training h2 {
+		margin: 0;
+	}
+
+
+	/*PARTNERS*/
+
+	.partners .header {
+		margin-bottom: 60px;
+	}
+
+	.partners .boxes {
+		float:left;
+		width: 23%;
+		margin:1%;
+		padding:10px;
+	}
+
+	.partners .footer {
+		margin-top: 60px;
+	}
+
+	.partners .content img {
+		border:1px solid black;
+		box-shadow: 1px 1px 4px black;
+		border-radius: 2px;
+		max-width: 85%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.partners .content img:hover {
+		border:3px solid #100421;
+		box-shadow: 3px 3px 4px #100421;
+	}
+
+	.partners .box2 {
+		position: relative;
+		top:-30px;
+	}
+
+	.partners .box3 {
+		position: relative;
+		top:10px;
+	}
+
+/*RESPONSIVE  RESPONSIVE RESPONSIVE*/
+
+@media (max-width: 980px) {
+	body {
+		/*background:yellow;*/
+	}
+
+	.logoImg {
+		margin-left:0px;
+	}
+
+/*HOME*/
+	.home ul.slides p {
+		padding:20px;
+	}
+
+	/*Healthy Living*/
+	.healthyLiving .content p {
+		width: 100%;
+	}
+}
+
+@media (max-width: 940px) {
+	body {
+		/*background: red;*/
+	}
+	/*Header*/
+	.logoImg {
+		display: none;
+	}
+
+	img.logo2 {
+		display: inline;
+		width: 40px;
+		height: 50px;
+		float:left;
+		position: relative;
+	}
+
+	ul.nav {
+		margin:0px;
+		margin-right: 0px;
+		float:right;
+		top:12px;
+	}
+
+	ul.nav li a {
+		font-size: 15px;
+	}
+
+	/*HOME*/
+
+	.home .content p {
+		width: 100%;
+	}
+
+	.home ul.slides p {
+		font-size: 18px;
+		letter-spacing: 0px;
+	}
+
+	/*About*/
+
+	.about .left {
+		float: none;
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.about .right {
+		float: none;
+		width: 100%;
+	}
+	.about iframe {
+		margin-top:20px;
+	}
+
+
+	/*Services*/
+	
+	ul.programs {
+		width: 36%;
+	}
+
+	.serviceSection img {
+		max-width: 100%;
+		margin:10px 0px 10px 22px;
+	}
+
+	/*Careers*/
+	.careerHalf {
+		width: 100%;
+		float: none;
+	}
+
+	/*Partners*/
+	.partners .boxes {
+		width: 45%;
+	}
+
+	.partners .box2 {
+		top:-25px;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 775px) {
+	body {
+		/*background: blue;*/
+	}
+
+	.content {
+		padding:20px;
+	}
+
+	img.logo2 {
+		display: none;
+	}
+
+	
+	/*Home*/
+	
+	.home ul.slides p {
+		padding:9px;
+		font-size: 15px;
+		letter-spacing: 0px;
+	}	
+
+	/*Header*/
+
+
+	.header ul.nav {
+		margin:0 auto;
+		margin-bottom:10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header ul.nav li {
+		display: block;
+		width: 33%;
+		float:left;
+		margin-bottom:10px;
+	}
+
+	.header ul.nav li:nth-child(4){
+		clear:left;
+	}
+
+	.header ul.nav li a {
+		font-size: 16px;
+		margin:0px;
+	}
+
+	.header ul.nav li a:hover {
+		text-decoration: underline;
+		border:none;
+		font-weight: bold;
+	}
+
+	img.logo2 {
+		top:15px;
+	}
+
+	/*Services*/
+
+	ul.programs {
+		width: 100%;
+	}
+
+	.serviceSection .box {
+		width: 95%;
+		margin:10px 10px;
+	}
+
+	.serviceSection2 p {
+		width: 100%;
+	}
+
+	.serviceSection5 p {
+		width: 100%;
+	}
+
+	/*Careers*/
+	
+	.careers .content {
+		padding:20px 30px 20px 20px;
+	}
+	
+	.careerLinks {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top:0px;
+	}
+	ul.nav.careerNav {
+		text-align: left;
+		margin:0;
+		margin-bottom:30px;
+	}
+
+	ul.nav.careerNav li {
+		float:none;
+		display: block;
+		margin-top:24px;
+		text-align: center;
+	}
+
+	ul.nav.careerNav li a{
+		font-size:18px;
+	}
+
+	.careers .training .boxes {
+		width: 100%;
+	}
+
+	/*footer*/
+
+	.footer p:first-child {
+		float:none;
+	}
+	.footer p:last-child {
+		float: none;
+		margin-left:26px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	body {
+		/*background:green;*/
+	}
+
+	/*Header*/
+	
+	.partners .header {
+		margin-bottom: 25px;
+	}
+	.header ul.nav li {
+		width: 50%;
+	}
+
+	.header ul.nav li:nth-child(4) {
+		clear:none;
+	}
+
+	/*HOME*/
+
+	.header ul.nav li {
+		width: 45%;
+	}
+	
+	/*Partners*/
+	.partners .boxes {
+		width: 90%;
+	}
+
+	.partners .box2 {
+		top:0px;
+	}
+
+}
+
+
+
+

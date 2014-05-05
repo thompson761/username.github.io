@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Nutritional Management Services</title>
+
+	<link type="image/png" href="images/favicon.png" rel="icon">
+
+	<link rel="stylesheet" href="style.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	
+</head>
+<body class="careers">
+
+	<div class="wrapper">
+		
+		<div class="header clearfix">
+			
+			<div class="logoImg">
+				<img class="logo" src="images/logo.png" alt="nms">
+			</div>
+
+			<div class="logoImgResponsive">
+				<img class="logo2" src="images/favicon.png" alt="nms">
+			</div>
+
+
+			<ul class="nav">
+
+				<li> <a href="index.html">Home</a> </li>
+				<li> <a href="about.html">About Us</a> </li>
+				<li> <a href="services.html">Services</a> </li>
+				<li> <a href="healthyLiving.html">Healthy Living</a> </li>
+				<li> <a href="careers.html">Careers</a> </li>
+				<li> <a href="partners.html">Partners</a> </li>
+
+			</ul> 
+
+
+		</div>
+
+		
+		<div class="content clearfix">
+
+			<div class="careerLinks clearfix">
+				<ul class="nav careerNav">
+					<li> <a href="#oppourtunities">Career Opportunities</a> </li>
+
+					<li> <a href="#training">Training</a> </li>
+
+					<li> <a href="#employees">Current Employees</a> </li>
+				</ul> 
+			</div>
+
+			<div class="careerSection oppourtunities" id="oppourtunities">	
+				<h2>Career Opportunities</h2>
+
+				<div class="careerHalf"><h3>Current Openings</h3>
+
+					<p>Operations/Sales Assistant</p>
+					<p>Location: Head Office</p>
+
+					<h3>Description</h3>
+
+					<p>We are currently seeking a dynamic individual who shares our philosophy of providing excellent food service management and value to our many clients.  This exciting, full time opportunity offers the challenges and rewards second to none in this industry.  Some travel within southern Ontario is required.</p>
+
+					<h3>Requirements</h3>
+
+					<ul>
+						<li>Post secondary education in Food and Nutrition from a recognized university or college</li>
+						<li>Excellent communication skills </li>
+						<li>Member in good standing with the CSNM or eligibility </li>
+						<li>Strong food production skills and experience</li>
+					</ul>
+
+					<h3>How to Apply</h3>
+
+					<p>Interested parties may submit a cover letter and resume to careers@nms.on.ca. Please indicate “NMS Head Office Opportunity 2014” in the subject line of your email.</p>
+				</div>
+
+				<div class="careerHalf"><h3>Future Opportunities</h3>
+
+					<p>ARE YOU INTERESTED IN A REWARDING CAREER?</p>
+					<p>As a growing company we are always interested in qualified professionals with a priority of providing great customer service.  We have employment opportunities for:</p>
+
+					<ul>
+						<li>Nutrition Managers</li>
+						<li>Cooks</li>
+						<li>Dietary Aids</li>
+						<li>Registered Dietitians</li>
+					</ul>
+
+					<p>Please send your resume to: careers@nms.on.ca</p>
+
+					<p>We appreciate your interest in Nutritional Management Services!</p>
+				</div>
+			</div>
+
+			<div class="careerSection training clearfix" id="training">
+				<h2 >Training</h2>
+
+				<div class="boxes box1">
+					<p>In partnership with Loyalist College, NMS can provide qualified instructors to coach your dietary staff through the MOHLTC mandate course to earn their Food Service Workers Certificate. The modules are taught on site allowing the staff to not only learn the curriculum but also learn about issues that are specific to your home.</p>
+				</div>
+
+				<div class="boxes box2">
+					<p>Modules</p>
+					<ul>
+						<li>Quantity Food Production</li>
+						<li>Sanitation & Safety</li>
+						<li>Institutional Food Service</li>
+						<li>Communication and the Food Service Worker</li>
+						<li>Introduction to Nutrition</li>
+						<li>Nutrition in Health Care</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="employees careerSection" id="employees">
+
+				<h2 >Current Employees</h2>
+
+				<a href="https://www.easystub.ca/default2.aspx" title="Easy Stub" target="_blank">Easy Stub</a>
+
+				<a href="health_safety.html" title="Health and Safety" target="_blank">Health and Safety</a>
+
+			</div>
+
+		</div>
+
+		<div class="footer clearfix">
+			<p> Nutritional Management Services </p>
+
+			<p><img class="phone" src="images/phone.png">1-800-265-2907</p>
+		</div>
+
+	</div>	
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(function() {
+			$('.careerNav li a').click(function(event){
+				event.preventDefault();
+				// get the href of the thing you clicked and store it as targetDiv
+				var targetDiv = $(this).attr("href");
+			$(".careerSection").hide();
+				// select the element that has the id targetDiv
+			$(targetDiv).fadeIn();
+			});
+		});
+	</script>
+
+</body>
+</html>
